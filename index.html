@@ -902,10 +902,21 @@
   💬 Chat on WhatsApp
 </a>
       </div>
-      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="btn-primary" style="justify-content:center">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="#0d0f16" stroke-width="1.5"/><path d="M2 7l10 7 10-7" stroke="#0d0f16" stroke-width="1.5" stroke-linecap="round"/></svg>
-        Send Message
-      </a>
+      <a href="#" onclick="sendEmail()" class="btn-primary" style="justify-content:center">
+  Send Message
+</a>
+     <script>
+function sendEmail() {
+  const name = document.querySelector('input[type="text"]').value;
+  const email = document.querySelector('input[type="email"]').value;
+  const message = document.querySelector('textarea').value;
+
+  const subject = `New message from ${name}`;
+  const body = `Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
+
+  window.location.href = `mailto:bharathsukumar2005@gmail.com?subject=${subject}&body=${body}`;
+}
+</script>
     </div>
   </div>
 </section>
