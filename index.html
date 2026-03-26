@@ -880,28 +880,11 @@
         </a>
       </div>
     </div>
-<input type="text" id="name" placeholder="Your name" />
-<input type="email" id="email" placeholder="your@email.com" />
-<textarea id="message" placeholder="Your message..."></textarea>
-   <style>
-   .contact-buttons {
-  display: flex;
-  gap: 16px;
-  margin-top: 15px;
-}
-
-.contact-buttons button {
-  flex: 1;
-  justify-content: center;
-}
-   <div class="contact-buttons">
-    @media (max-width: 600px) {
-  .contact-buttons {
-    flex-direction: column;
-  }
-}
-    </style>
-  <div class="contact-buttons">
+   <input type="text" id="name">
+<input type="email" id="email">
+<textarea id="message"></textarea>
+   
+<div class="contact-buttons">
 
   <button type="button" onclick="sendWhatsApp()" class="btn-primary">
     💬 WhatsApp
