@@ -889,9 +889,9 @@
 </button>
       </div>
    <div>
-     <a href="#" onclick="sendEmail()" class="btn-outline" style="justify-content:center">
+ <button onclick="sendEmail()" class="btn-outline">
   Send via Email
-</a>
+</button>
    </div>
  </script>
     </div>
@@ -914,11 +914,10 @@ function sendWhatsApp() {
     return;
   }
 
-  const text = `Hello, I’m ${name}.%0AEmail: ${email}%0A%0AMessage:%0A${message}`;
+  const text = `Hello, I'm ${name}.%0AEmail: ${email}%0A%0AMessage:%0A${message}`;
 
   window.open("https://wa.me/919944913921?text=" + text, "_blank");
 }
 </script>
- alert("working");
 </body>
 </html>
